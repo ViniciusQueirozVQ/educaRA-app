@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutContentActCadDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="org.artoolkit.ar.samples.QuiRA.ActCadObjeto"
+        tools:showIn="@layout/act_edt_disciplina">
+
+        <TextView
+            android:id="@+id/textDisciplina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Disciplina"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editDisciplina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/textDisciplina"
+            app:layout_constraintRight_toRightOf="@+id/textDisciplina"
+            app:layout_constraintTop_toBottomOf="@+id/textDisciplina"/>
+
+        <TextView
+            android:id="@+id/textImg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="14dp"
+            android:text="Imagem"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/editDisciplina"
+            app:layout_constraintRight_toRightOf="@+id/editDisciplina"
+            app:layout_constraintTop_toBottomOf="@+id/editDisciplina" />
+
+        <EditText
+            android:id="@+id/editImg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="@+id/textImg"
+            app:layout_constraintRight_toRightOf="@+id/textImg"
+            app:layout_constraintTop_toBottomOf="@+id/textImg" />
+
+        <ImageButton
+            android:id="@+id/imgButton"
+            android:layout_width="33dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/editImg"
+            app:layout_constraintTop_toTopOf="@+id/editImg"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            app:srcCompat="@mipmap/ic_folder_open"
+            tools:clickable="true" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
